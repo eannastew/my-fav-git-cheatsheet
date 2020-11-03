@@ -1,0 +1,26 @@
+
+Enabling credential caching, it will be cached for 7200 seconds (2 hour).
+
+$> git config --global credential.helper 'cache --timeout 7200'
+
+Tagging
+
+$> git tag -a <tag> -m <comment>
+
+Remove Tagging
+
+$> git tag -d <tag>
+$> git push origin :refs/tags/<tag>
+
+
+Cherry pick
+
+git cherry-pick <commitSha>
+
+
+---
+References:
+
+* `<tag>`     :: git tag, usually a version. i.e. ```v0.0.1```
+* `<comment>`  :: Comment for `-m` option. i.e. ```"See CHANGELOG"```
+* `<commitSha>` :: the SHA of the commmit i.e. ```d38be8d```
